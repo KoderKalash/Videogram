@@ -6,7 +6,7 @@ import { v2 as cloudinary } from 'cloudinary';
     cloudinary.config({ 
         cloud_name: process.env.CLOUDINARY_CLOUD_NAME, 
         api_key: process.env.CLOUDINARY_API_KEY, 
-        api_secret: process.env.CLOUDINARY_API_SECRET // Click 'View API Keys' above to copy your API secret
+        api_secret: process.env.CLOUDINARY_API_SECRET 
     });
     
     // Upload an image
@@ -40,3 +40,5 @@ import { v2 as cloudinary } from 'cloudinary';
     
     console.log(autoCropUrl);    
 })();
+
+export { cloudinary };
